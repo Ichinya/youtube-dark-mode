@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "YouTube Dark Mode"
+    },
+    "appDescription": {
+        "message": "YouTube Dark Mode"
+    },
+    "enableDarkModeText": {
+        "message": "Do it Dark!"
+    }
+}

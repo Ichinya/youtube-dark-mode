@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "YouTube Dark Mode"
+    },
+    "appDescription": {
+        "message": "Делает проигрыватель темным по нажатию кнопки"
+    },
+    "enableDarkModeText": {
+        "message": "Создай тьму!"
+    }
+}

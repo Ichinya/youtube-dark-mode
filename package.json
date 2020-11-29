@@ -1,0 +1,20 @@
+{
+  "name": "chrome-extension",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ichi",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chrome": "0.0.126",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-terser": "^2.0.0",
+    "gulp-zip": "^5.0.2",
+    "types": "^0.1.1"
+  }
+}

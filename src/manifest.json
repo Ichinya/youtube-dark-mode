@@ -1,0 +1,50 @@
+{
+  "name": "__MSG_appName__",
+  "version": "0.1.1",
+  "description": "__MSG_appDescription__",
+  "manifest_version": 2,
+  "default_locale": "ru",
+  "background": {
+    "scripts": [
+      "scripts/background.js",
+      "scripts/backgroundMessaging.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js",
+        "scripts/contentMessaging.js",
+        "scripts/contentRequest.js"
+      ],
+      "matches": [
+        "*://*.youtube.com/*"
+      ]
+    },
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "exclude_matches": [
+        "https://*.youtube.com/watch*"
+      ],
+      "js": [
+        "scripts/youtube.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "*://*.youtube.com/*"
+  ],
+  "icons": {
+    "16": "img/darkIcon.png",
+    "48": "img/darkIcon.png",
+    "128": "img/darkIcon.png"
+  },
+  "browser_action": {
+    "default_title": "Подсказка на иконке",
+    "default_popup": "popup.html"
+  }
+}
